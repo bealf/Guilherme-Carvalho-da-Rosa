@@ -1,0 +1,46 @@
+<!DOCTYPEhtml>
+<html> 
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+	function fibo(){
+		var pos;
+		pos = document.getElementById("teste").value;
+		var a = 1;
+		var b = 1;
+		var c;
+        var i=2;
+		if(pos == 2)
+		{alert("Bah! O número da sequência Fibonacci na posição digitada é 1");}
+		else{
+				if(pos == 0)
+				{alert("Bah! O número da sequência Fibonacci na posição digitada é 0");}
+				else{if(pos == 1)
+						{alert("Bah! O número da sequência Fibonacci na posição digitada é 1");}
+				
+						else{
+						while(i<pos)
+								{
+									c = a+b;
+									a = b;
+									b = c;
+									i = i+1;
+								
+								}
+								alert("Bah! O número da sequência Fibonacci na posição digitada é "+c);
+							}
+					}	
+		}			
+	}
+	
+</script>
+</head>
+<body>
+<form  name="meuForm">
+
+		<input id="teste" onblur="javascript:fibo();"/> 
+
+		<button onclick="javascript:fibo();">Digite uma posição da sequência Fibonacci (a posição inicial é 0)</button>
+	</form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPEhtml>
+<html> 
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+
+	function mdc(a, b)
+	{ var r;
+		while(b!=0)
+		{
+		 r=a%b;
+		 a=b;
+		 b=r;
+		}
+		return a;
+	}
+	function mmc(c, d){
+		var resu;
+		resu = (c*d)/ mdc(c, d);
+		return resu;
+	}
+	console.log(mmc(5,6));
+	document.write( "f12 -> console " );
+
+</script>
+</head>
+<body>
+</body>
+</html>
+

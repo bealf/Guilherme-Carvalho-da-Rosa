@@ -1,0 +1,33 @@
+<!DOCTYPEhtml>
+<html> 
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+	function iT(){
+		var valDigitado = document.getElementById("teste").value;
+
+        var fatorial;
+        fatorial = valDigitado;
+        var i = 1;
+        while(i<valDigitado)
+        {
+        fatorial=fatorial*(valDigitado-i)
+        i=i+1;
+        }
+
+
+		alert("Bah! O fatorial do número é "+fatorial);
+
+	}
+</script>
+</head>
+<body>
+	<form  name="meuForm">
+
+		<input id="teste" onblur="javascript:iT();"/> 
+
+		<button onclick="javascript:iT();">Executar</button>
+	</form>
+
+</body>
+</html>

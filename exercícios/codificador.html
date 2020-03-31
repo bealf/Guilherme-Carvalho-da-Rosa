@@ -1,0 +1,39 @@
+<!DOCTYPEhtml>
+<html> 
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+	function cod(txt) {  
+		var u = 'tenis';
+		var a = 'polar';
+		var i = 0;
+		var e = '';
+		var b = 0;
+   while(i<txt.length)
+   {	var h = 0;
+		while(h<u.length)
+		{
+			if(txt[i]==u[h])
+			{e = e+a[h];
+				b = 1;}
+			if(txt[i]==a[h])
+			{e = e+u[h];
+				b = 1;}
+			h = h+1;
+		}
+		if(b!=1){e = e+txt[i];}
+		b = 0;
+			
+		i = i+1;
+   }
+   
+   return e;
+}
+	console.log(cod("guilherme"));
+	
+</script>
+</head>
+<body>
+	
+</body>
+</html>
